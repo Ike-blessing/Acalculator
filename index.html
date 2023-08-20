@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf">
+        <meta name="content" width="device-width, scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" sizes="31*32" href=".\assets\images\favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Age Calculator</title>
+    </head>
+    <body>
+        <main id="main">
+            <section>
+                <div id="container">
+                    <form id="inner-container">
+                        <div class="date">
+                            <div>
+                                <p class="title">DAY</p>
+                                <input type="text" name="day" id="day" placeholder="DD" minlength="1" maxlength="2" required >
+                                <small></small>
+                            </div>
+                            <div >
+                                <p class="title">MONTH</p>
+                                <input type="text" name="month" id="month" placeholder="MM" minlength="1" maxlength="2" required>
+                                <small></small>
+                            </div>
+                            <div >
+                                <p class="title"> YEAR</p>
+                                <input type="text" name="year" id="year" placeholder="YYYY" minlength="1" maxlength="4" required>
+                                <small></small>
+                            </div>
+                        </div>
+                        <div class="submit_block">
+                            <br>
+                            <button id="submit" type="submit" class="submit_btn" onclick="handlesubmit(e)"><img onclick="validate()" src=".\assets\images\icon-arrow.svg" alt="icon"></button>
+                        </div>
+                        <div class="output">
+                            <h1 id="YY"><span>--</span>years</h1>
+                            <h1><span id="MM">--</span>month</h1>
+                            <h1><span id="DD">--</span>days</h1>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
